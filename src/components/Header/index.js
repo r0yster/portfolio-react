@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Nav from '../Navigation';
 
-function Header() {
+function Header(props) {
+
+    const [contactSelected, setContactSelected] = useState(false);
+    const { navItems = [], currentNav, setCurrentNav } = props;
+
     return(
-        <section>
-            <h1 id="header">This is a Header</h1>
-        </section>
+        <header>
+            { <Nav 
+                navItems={navItems}
+                currentNav={currentNav}
+                setCurrentNav={setCurrentNav}
+                contactSelected={contactSelected}
+                setContactSelected={setContactSelected}
+            /> }
+        </header>
+        
     );
 }
 
