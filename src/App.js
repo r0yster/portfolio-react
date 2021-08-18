@@ -1,37 +1,35 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
-import About from "./components/About";
+import Nav from "./components/Nav";
+import Page from "./components/Page";
 import Footer from "./components/Footer";
-import Project from "./components/Project";
-import Contact from "./components/Contact";
-import Resume from "./components/Resume";
-
 
 function App() {
-  const [navItems] = useState(["About me", "Projects", "Contact Me", "Resume"]);
-  const [currentNav, setCurrentNav] = useState(navItems[0]);
-
-  const page = () => {
-    switch (currentNav) {
-      case "Contact Me":
-        return <Contact />;
-      case "Resume":
-        return <Resume />;
-      default:
-        return <About />;
+  const [pages] = useState([
+    {
+      name: "about me"
+    },
+    { name: "portfolio" },
+    { name: "contact" },
+    {
+      name: "resume"
     }
-  };
+  ]);
 
-  document.title = currentNav;
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
     <div>
-      <Header
-        navItems={navItems}
-        currentNav={currentNav}
-        setCurrentNav={setCurrentNav}
-      />
-      {page(currentNav)}
+      <Header>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Nav>
+      </Header>
+      <main>
+        <Page currentPage={currentPage}></Page>
+      </main>
       <Footer />
     </div>
   );

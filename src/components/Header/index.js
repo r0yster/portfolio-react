@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
-import Nav from '../Navigation';
+import React from 'react';
+import coverImage from '../../assets/cover/cover-image.jpg';
 
 function Header(props) {
 
-    const [contactSelected, setContactSelected] = useState(false);
-    const { navItems = [], currentNav, setCurrentNav } = props;
-
-    return(
-        <header>
-            { <Nav 
-                navItems={navItems}
-                currentNav={currentNav}
-                setCurrentNav={setCurrentNav}
-                contactSelected={contactSelected}
-                setContactSelected={setContactSelected}
-            /> }
-        </header>
-        
-    );
+  return (
+    <header className="flex-row space-between px-1">
+      <h1>Roy Cantu</h1>
+      <img src={coverImage} alt="wooden background"></img>
+      {props.children}
+    </header>
+  );
 }
 
 export default Header;

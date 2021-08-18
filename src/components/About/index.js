@@ -1,40 +1,18 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import Project from '../Project';
 
 function About() {
-
-    return (
-        <>
-            <Container className="about-me-content">
-                <h1>About Me</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                    imperdiet scelerisque varius. Nullam sit amet urna vulputate,
-                    scelerisque lorem et, sollicitudin tortor. Curabitur et odio sed dolor
-                    molestie elementum sit amet sit amet quam. Etiam porta eleifend magna
-                    egestas fermentum. Morbi ornare elit in dolor viverra venenatis. Fusce
-                    dictum urna ut odio efficitur suscipit. Aliquam at velit id dui
-                    vestibulum auctor eget vitae dolor. Proin non finibus mi. Donec cursus
-                    enim ut lectus rhoncus tempus. Pellentesque ut mi risus. Nam bibendum
-                    egestas est a maximus. Mauris vitae justo tincidunt, commodo nibh sit
-                    amet, dapibus mi.
-                <br></br>
-                <br></br>
-                    Proin vel odio efficitur, hendrerit turpis pellentesque, elementum
-                    diam. Maecenas tincidunt egestas placerat. Pellentesque non nibh
-                    suscipit, hendrerit augue eget, egestas sapien. Vivamus sollicitudin
-                    blandit enim eget varius. Nullam tempor mi sit amet massa maximus,
-                    eget convallis felis vulputate. Aliquam erat volutpat. Interdum et
-                    malesuada fames ac ante ipsum primis in faucibus. Maecenas nec
-                    venenatis tellus, et pellentesque nunc. Morbi nec arcu id mi lobortis
-                    tincidunt. Sed ut metus ligula. Quisque non nulla tellus. Phasellus
-                    sagittis vehicula nulla id venenatis. Sed non orci lectus.
-                </p>
-                <Project />
-            </Container>
-        </>
-    );
+  return (
+    <section className="my-5">
+      <div className="my-2">
+        <div className="profile-img my-5">
+        <i className="fas fa-user-circle" style={{ fontSize: "96px" }}></i>
+        </div>
+        <p>
+        Java developer with a computer engineering degree and over 3 years of banking industry experience becoming one of the main SMEs for all bank projects interacting with ATM/POS transaction data. Skills in OOP, JavaScript, RESTful APIs, and GCP from University of Texas coding boot camp and Coursera certificates. Enjoys reverse engineering systems, processes, and applications leveraging the knowledge for future use. Extremely resourceful and detail orientated, with the ability to multitask and prioritize work items effectively alongside a team or individually.
+        </p>
+      </div>
+    </section>
+  );
 }
 
 export default About;
