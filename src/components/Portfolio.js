@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Project from "../Project";
 
 function Portfolio() {
-
-  // Replace links with deployed projects and GitHub repos
-  const [projects] = useState([
+  return (
     {
       name: 'Local Heroes',
       description: 'Full stack application that connects tourists with local individuals/groups based one common interests',
@@ -41,7 +39,7 @@ function Portfolio() {
       link: "https://r0yster.github.io/run-buddy/",
       repo: "https://github.com/r0yster/run-buddy"
     }
-  ]);
+  );
 
   return (
     <div>
