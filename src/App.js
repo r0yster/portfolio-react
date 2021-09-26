@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav/Nav';
+import Nav from './components/Nav';
+import Home from './pages/Home';
 import Header from './components/Header';
-import About from './components/About';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Testimonials from './components/Testimonials';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+// import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
 
 function App() {
   const [pages] = useState([
+    { name: 'Home' },
     { name: 'About' },
     { name: 'Portfolio' },
     { name: 'Resume' },
@@ -28,6 +30,7 @@ function App() {
         ></Nav>
       </Header>
       <main>
+        {currentPage.name === 'Home' && <Home />}
         {currentPage.name === 'About' && <About />}
         {currentPage.name === 'Portfolio' && <Portfolio />}
         {currentPage.name === 'Resume' && <Resume />}

@@ -4,7 +4,7 @@ import About from '../About';
 import Portfolio from '../Portfolio';
 import Contact from '../Contact';
 import Resume from '../Resume';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import { capitalizeFirstLetter } from '../utils/helpers';
 
 function Page({ currentPage }) {
 

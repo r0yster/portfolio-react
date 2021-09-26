@@ -71,24 +71,34 @@ let resumeData = {
     ],
     "portfolio":[
       {
-        "name":"project1",
-        "description":"mobileapp",
+        "name":"Helping-Hands",
+        "description":"Helping Hands seeks to serve the less fortunate through grass root efforts of engaged community members.",
         "imgurl":"images/portfolio/phone.jpg"
       },
       {
-        "name":"project2",
-        "description":"mobileapp",
+        "name":"Local-Heroes",
+        "description":"Full stack application that connects tourists with local individuals/groups based one common interests",
         "imgurl":"images/portfolio/project.jpg"
       },
       {
-        "name":"project3",
-        "description":"mobileapp",  
+        "name":"The-Movie-Hub",
+        "description":"Website built on pure HTML, CSS, and JavaScript to provide users with a one stop shop for all their movie needs.",  
         "imgurl":"images/portfolio/project2.png"
       },
       {
-        "name":"project4",
-        "description":"mobileapp",
+        "name":"Deep-Thoughts",
+        "description":"Application that allows users to share their thoughts and have users react to mentioned thoughts",
         "imgurl":"images/portfolio/phone.jpg"
+      },
+      {
+        "name":"Budget-Tracker",
+        "description":"Budget tracker application to help with expenses as you travel. Track withdrawals and deposits with or without a data/internet connection keeping an accurate account balance",
+        "imgurl":"images/portfolio/project.jpg"
+      },
+      {
+        "name":"run-buddy",
+        "description":"HTML/CSS mock website allowing users to sign up for a run",
+        "imgurl":"images/portfolio/project2.png"
       }
     ],
     "testimonials":[

@@ -1,5 +1,5 @@
 import React from 'react';
-import resumeData from '../../resumeData';
+import resumeData from '../resumeData';
 
 function Footer() {
   return (
