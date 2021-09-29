@@ -1,44 +1,69 @@
 import React from 'react';
-
+import { Box, Container, SimpleGrid } from '@chakra-ui/react';
+import helpingHandsImg from '../assets/projects/helping-hands.PNG'
+import localHeroesImg from '../assets/projects/local-heroes.jpg'
+import movieHubImg from '../assets/projects/the-movie-hub.jpg'
 function Project() {
 
   return (
-    {
-      name: 'Local Heroes',
-      description: 'Full stack application that connects tourists with local individuals/groups based one common interests',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'The Movie Hub',
-      description: 'Website built on pure HTML, CSS, and JavaScript to provide users with a one stop shop for all their movie needs.',
-      link: "https://r0yster.github.io/Project1/",
-      repo: "https://github.com/r0yster/Project1"
-    },
-    {
-      name: 'Book Search',
-      description: 'Application that will allow users to search through google books based on keyword searh. Also feature login functionality allowing the use of saving favorite books along with viewing saved books collection.',
-      link: "https://afternoon-forest-82318.herokuapp.com/",
-      repo: "https://github.com/r0yster/book-search"
-    },
-    {
-      name: 'Budget Tracker',
-      description: 'Budget tracker application to help with expenses as you travel. Track withdrawals and deposits with or without a data/internet connection keeping an accurate account balance',
-      link: "https://sleepy-savannah-50854.herokuapp.com/",
-      repo: "https://github.com/r0yster/challenge-19-budget-tracker"
-    },
-    {
-      name: 'Deep Thoughts',
-      description: 'Application that allows users to share their thoughs and have users react to mentioned thoughts',
-      link: "https://github.com/r0yster/deep-thoughts",
-      repo: "https://github.com/r0yster/deep-thoughts"
-    },
-    {
-      name: 'run-buddy',
-      description: 'HTML/CSS mock website allowing users to sign up for a run',
-      link: "https://r0yster.github.io/run-buddy/",
-      repo: "https://github.com/r0yster/run-buddy"
-    }
+    <>
+    <SimpleGrid columns={[2, null, 3]} spacing="10px">
+      <Box>
+        <div class="boxy  box_4">
+          <div class="overlay_1">
+            <h2 class="overlay-text">Helping Hands</h2>
+            <a href="https://github.com/r0yster/helping-hands" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://helping-hands-deux.herokuapp.com/" class="overlay-link">Demo</a>
+          </div>
+        </div>
+        <div class="boxy  box_1">
+          <div class="overlay_1">
+            <h2 class="overlay-text">Google Book Search</h2>
+            <a href="https://github.com/r0yster/book-search" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://afternoon-forest-82318.herokuapp.com/" class="overlay-link">Demo</a>
+          </div>
+        </div>
+      </Box>
+      <Box>
+        <div class="boxy  box_5">
+          <div class="overlay_1">
+            <h2 class="overlay-text">Local Heroes</h2>
+            <a href="https://github.com/r0yster/local-heroes" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://local-heroes-prjct2.herokuapp.com/" class="overlay-link">Demo</a>
+          </div>
+        </div>
+        <div class="boxy  box_3">
+          <div class="overlay_1">
+            <h2 class="overlay-text">Deep Thoughts</h2>
+            <a href="https://github.com/r0yster/deep-thoughts" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://github.com/r0yster/deep-thoughts" class="overlay-link">Demo</a>
+          </div>
+        </div>
+      </Box>
+      <Box>
+        <div class="boxy  box_6">
+          <div class="overlay_1">
+            <h2 class="overlay-text">The Movie Hub</h2>
+            <a href="https://github.com/r0yster/The-Movie-HUB" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://r0yster.github.io/The-Movie-HUB/" class="overlay-link">Demo</a>
+          </div>
+        </div>
+        <div class="boxy  box_2">
+          <div class="overlay_1">
+            <h2 class="overlay-text">Offline Budget Tracker</h2>
+            <a href="https://github.com/r0yster/budget-tracker" class="overlay-link">GitHub</a>
+            <br/>
+            <a href="https://sleepy-savannah-50854.herokuapp.com/" class="overlay-link">Demo</a>
+          </div>
+        </div>
+      </Box>
+    </SimpleGrid>
+    </>
   );
 };
 

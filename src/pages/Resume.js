@@ -1,34 +1,36 @@
 import React from 'react';
+import { Box, Container, ListItem, UnorderedList, SimpleGrid } from '@chakra-ui/react';
 
 function Resume() {
   return (
-    <section className="my-5">
-      <div className="my-2">
-      <p>
+    <Container className="my-5" style={{height: "73vh" }}>
+      <Box textAlign="center">
         Download my <a href="https://www.linkedin.com/">resume</a>
-        </p>
-        <h3>Front-end Proficiencies</h3>
-        <ul className="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>responsive design</li>
-          <li>React</li>
-          <li>Bootstrap</li>
-        </ul>
-        <h3>Back-end Proficiencies</h3>
-        <ul className="skills">
-          <li>APIs</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>MySQL, Sequelize</li>
-          <li>MongoDB, Mongoose</li>
-          <li>REST</li>
-          <li>GraphQL</li>
-        </ul>
-      </div>
-    </section>
+      </Box>
+      <SimpleGrid columns={2} spacing={20} className="my-2">
+        <UnorderedList className="skills">
+          <h3>Front-end Proficiencies</h3>
+          <ListItem>HTML</ListItem>
+          <ListItem>CSS</ListItem>
+          <ListItem>JavaScript</ListItem>
+          <ListItem>jQuery</ListItem>
+          <ListItem>responsive design</ListItem>
+          <ListItem>React</ListItem>
+          <ListItem>Bootstrap</ListItem>
+        </UnorderedList>
+
+        <UnorderedList className="skills">
+          <h3>Back-end Proficiencies</h3>
+          <ListItem>APIs</ListItem>
+          <ListItem>Node</ListItem>
+          <ListItem>Express</ListItem>
+          <ListItem>MySQL, Sequelize</ListItem>
+          <ListItem>MongoDB, Mongoose</ListItem>
+          <ListItem>REST</ListItem>
+          <ListItem>GraphQL</ListItem>
+        </UnorderedList>
+      </SimpleGrid>
+    </Container>
   );
 }
 

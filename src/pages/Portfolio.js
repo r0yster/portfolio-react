@@ -5,11 +5,6 @@ function Portfolio() {
 
   return (
     <>
-      <div>
-        <div className="row">
-          <h1 className="text-center">Project Portfolio</h1>
-        </div>
-      </div>
       <Project></Project>
     </>
   );
